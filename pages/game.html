@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labyrinth Game: Jogar</title>
+
+    <!-- Link: Google Fonts , CSS, CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>
+          Labyrinth <br />
+          Game
+        </h1>
+      </div>
+
+      <canvas id="canvas" width="380"></canvas>
+    </div>
+    <div class="buttonsControl">
+      <button onclick="player.x -= 1; renderPlayer(player.x, player.y)">
+        <i class="ti ti-arrow-big-left"></i>
+      </button>
+      <button onclick="player.x += 1; renderPlayer(player.x, player.y)">
+        <i class="ti ti-arrow-big-right"></i>
+      </button>
+      <button onclick="player.y -= 1; renderPlayer(player.x, player.y)">
+        <i class="ti ti-arrow-big-up"></i>
+      </button>
+      <button onclick="player.y += 1; renderPlayer(player.x, player.y)">
+        <i class="ti ti-arrow-big-down"></i>
+      </button>
+    </div>
+    <script src="../scripts/game.js"></script>
+  </body>
+</html>

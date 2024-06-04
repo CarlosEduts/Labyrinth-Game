@@ -1,0 +1,108 @@
+/* Page: index.html */
+.previewContainer > canvas,
+.createContainer > textarea,
+.topActions,
+.bottomActions,
+.maps,
+.actions {
+  width: 100%;
+  max-width: 320px;
+  margin: 0.5rem;
+}
+
+.topActions,
+.bottomActions,
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primaryButton,
+.secondaryButton,
+.buttonsControl > button {
+  width: 49%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background: none;
+}
+
+.buttonsControl > button,
+.primaryButton {
+  border: none;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  border-bottom: 3px solid #c99909;
+  border-right: 3px solid #c99909;
+  transition: all 100ms;
+}
+
+.buttonsControl > button:hover,
+.primaryButton:hover {
+  border: none;
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+}
+
+.createContainer > textarea,
+.map {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  padding: 1rem;
+  border-bottom: 5px solid var(--primary-color);
+  border-right: 5px solid var(--primary-color);
+}
+
+.map > form > input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+/* Page: create.html */
+.topActions > button {
+  height: 40px;
+  border-radius: 6px;
+}
+
+canvas,
+.createContainer > textarea {
+  border: 2px solid var(--primary-color);
+  background: none;
+  color: var(--primary-color);
+  resize: vertical;
+  font-family: Courier, monospace;
+  line-height: 17.27px;
+  letter-spacing: 8px;
+  border-radius: 8px;
+}
+
+.previewContainer > canvas {
+  display: none;
+  background-color: #899ba5;
+}
+
+/* Page: game.html */
+canvas {
+  background-color: #899ba5;
+}
+
+.buttonsControl > button {
+  width: 80px;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.buttonsControl {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

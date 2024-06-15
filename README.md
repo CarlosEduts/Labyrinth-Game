@@ -48,4 +48,4 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` p
 
 ## Página do Jogo Online 🌐
 
-Acesse o Jogo [Aqui!](https://github.com/CarlosEduts/Labyrinth-Game).
+Acesse o Jogo [Aqui!](https://carloseduts.github.io/Labyrinth-Game/).

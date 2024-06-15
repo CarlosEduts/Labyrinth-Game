@@ -29,16 +29,16 @@
       <canvas id="canvas" width="380"></canvas>
     </div>
     <div class="buttonsControl">
-      <button onclick="player.x -= 1; renderPlayer(player.x, player.y)">
+      <button onclick="player.movX -= 1; renderPlayer()">
         <i class="ti ti-arrow-big-left"></i>
       </button>
-      <button onclick="player.x += 1; renderPlayer(player.x, player.y)">
+      <button onclick="player.movX += 1; renderPlayer()">
         <i class="ti ti-arrow-big-right"></i>
       </button>
-      <button onclick="player.y -= 1; renderPlayer(player.x, player.y)">
+      <button onclick="player.movY -= 1; renderPlayer()">
         <i class="ti ti-arrow-big-up"></i>
       </button>
-      <button onclick="player.y += 1; renderPlayer(player.x, player.y)">
+      <button onclick="player.movY += 1; renderPlayer()">
         <i class="ti ti-arrow-big-down"></i>
       </button>
     </div>

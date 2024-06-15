@@ -1,14 +1,9 @@
 const canvas = document.querySelector("#canvas");
+const time = document.querySelector(".time");
 const context = canvas.getContext("2d");
 const currentURL = window.location.href;
-const tileSize = 18;
 const canvasWidth = 380;
-const gameLevel = `
-#######n
-#@....#n
-#####s#`;
-
-//currentURL.substring(currentURL.indexOf("game") + 12);
+const gameLevel = currentURL.substring(currentURL.indexOf("game") + 12);
 
 const colors = {
   player: "#222d33",
@@ -31,6 +26,30 @@ let collisions = {
   exit: [],
   check: false,
 };
+
+function tileSize(size) {
+  // Labirinto pequeno "#p"
+  if (size == "p") {
+    return 18;
+  }
+
+  // Labirinto médio "#m"
+  if (size == "m") {
+    return 14;
+  }
+
+  // Labirinto grande "#g"
+  if (size == "g") {
+    return 12;
+  }
+
+  // Labirinto Extra grande "#e"s
+  if (size == "e") {
+    return 8;
+  }
+}
+
+let size = tileSize(currentURL.substring(currentURL.indexOf("game") + 11)[0]);
 
 function captureCollisions() {
   let xAxis = 0;
@@ -79,7 +98,7 @@ function renderScene() {
     }
 
     setColor(item);
-    context.fillRect(xAxis * tileSize, yAxis * tileSize, tileSize, tileSize);
+    context.fillRect(xAxis * size, yAxis * size, size, size);
   }
 }
 
@@ -88,8 +107,8 @@ function renderPlayer(playerX, playerY) {
   context.clearRect(
     0,
     0,
-    canvasWidth * tileSize,
-    (gameLevel.length / canvasWidth + 2) * tileSize
+    canvasWidth * size,
+    (gameLevel.length / canvasWidth + 2) * size
   );
   renderScene();
 
@@ -133,16 +152,16 @@ function renderPlayer(playerX, playerY) {
 
   // Renderiza o jogador e trata colisões
   if (collisions.check) {
-    context.fillRect(xAxis * tileSize, yAxis * tileSize, tileSize, tileSize);
+    context.fillRect(xAxis * size, yAxis * size, size, size);
     collisions.check = false;
     player.x = 0;
     player.y = 0;
   } else {
     context.fillRect(
-      (xAxis + playerX) * tileSize,
-      (yAxis + playerY) * tileSize,
-      tileSize,
-      tileSize
+      (xAxis + playerX) * size,
+      (yAxis + playerY) * size,
+      size,
+      size
     );
   }
 }
@@ -169,14 +188,14 @@ document.addEventListener("keydown", (e) => {
 });
 
 function initializeGame() {
-
   // Iniciar Timer
   setInterval(() => {
     timeElapsed += 1;
+    time.innerText = `Tempo: ${timeElapsed} s`;
   }, 1000);
 
   captureCollisions();
-  canvas.height = (canvasHeight + 2) * tileSize;
+  canvas.height = (canvasHeight + 2) * size;
   renderPlayer(player.x, player.y);
 }
 

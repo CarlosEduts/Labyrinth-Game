@@ -45,3 +45,7 @@ Os ícones utilizados neste projeto foram cedidos pela biblioteca Tabler Icons. 
 ## Licença 📝
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para obter mais detalhes.
+
+## Página do Jogo Online 🌐
+
+Acesse o Jogo [Aqui!](https://github.com/CarlosEduts/Labyrinth-Game).

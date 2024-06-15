@@ -39,6 +39,7 @@ a {
   font-size: 1rem;
   font-weight: 300;
   text-decoration: none;
+  color: var(--light);
 }
 
 p {
@@ -143,7 +144,7 @@ canvas {
   backdrop-filter: blur(10px);
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .redirect {

@@ -6,7 +6,7 @@ Bem-vindo ao Labyrinth Game, um desafio de labirinto implementado com JavaScript
 
 ## Instruções de Jogo 🕹️
 
-1. Abra o arquivo `index.html` em seu navegador da web preferido.
+1. Abra o [Jogo](https://carloseduts.github.io/Labyrinth-Game/) em seu navegador da web.
 2. Use as teclas de seta do teclado para mover o personagem através do labirinto.
 3. O objetivo é encontrar a saída do labirinto o mais rápido possível!
 
@@ -15,10 +15,6 @@ Bem-vindo ao Labyrinth Game, um desafio de labirinto implementado com JavaScript
 - Controle intuitivo utilizando as teclas de seta.
 - Temporizador integrado para acompanhar o tempo gasto no jogo.
 - Interface gráfica amigável e acessível.
-
-## Requisitos do Sistema 💻
-
-Para jogar o Labyrinth Game, é necessário um navegador da web moderno que suporte JavaScript.
 
 ## Instalação 🛠️
 
@@ -49,3 +45,9 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` p
 ## Página do Jogo Online 🌐
 
 Acesse o Jogo [Aqui!](https://carloseduts.github.io/Labyrinth-Game/).
+
+## Imagens do Projeto 🖼️
+
+<img src="./images/203051_carloseduts.github.io.jpeg" alt="Página Inicial" width="200px">
+<img src="./images/201558_carloseduts.github.io.jpeg" alt="Em Jogo" width="200px">
+<img src="./images/201728_carloseduts.github.io.jpeg" alt="Página de Vitória" width="200px">
